@@ -5,7 +5,7 @@ var fps = parseInt(document.getElementById('fps').value);
 var frame = 0;
 var looping = false;
 var spritesheet = new Image();
-spritesheet.src= './test.png'
+spritesheet.src= 'https://kcal2845.github.io/js_utils/spritesheet_tester/test.png'
 
 document.getElementById('frame_width').oninput = function(){
   frame_width = parseInt(this.value);
