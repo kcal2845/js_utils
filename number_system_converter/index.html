@@ -1,18 +1,44 @@
-<!doctype html>
-<html>
-<head><title>Browser Language</title>
-<meta charset='utf-8'>
-</head>
-<body>
 <div>
+<form oninput='fpsvalue.value = fps.value'>
 <table align='center'>
-<tr><td align='center' colspan='2' style='padding-bottom:10px'>Number System Converter</td></tr>
-<tr><td align='right'>Binary :</td><td align='center'><input type='text' id='input_binary' value='' style="text-align: right;"></td></tr>
-<tr><td align='right'>Octal :</td><td align='center'><input type='text' id='input_octal' value='' style="text-align: right;"></td></tr>
-<tr><td align='right'>Decimal :</td><td align='center'><input type='text' id='input_decimal' value='' style="text-align: right;"></td></tr>
-<tr><td align='right'>Hexadecimal :</td><td align='center'><input type='text' id='input_hexadecimal' value='' style="text-align: right;"></td></tr>
+<tr><td align = 'center' colspan='4' style='padding-bottom:10px'>Spritesheet Tester</td></tr>
+<tr>
+  <td align = 'right' style='padding-bottom:5px'>frame width : </td>
+  <td align = 'left' style='padding-bottom:5px'><input type='text' id='frame_width' value='46'></td>
+  <td align = 'right' style='padding-bottom:5px'>frame height : </td>
+  <td align = 'left' style='padding-bottom:5px'><input type='text' id='frame_height' value='38'></td>
+</tr>
+<tr>
+  <td align = 'right' style='padding-bottom:5px'>frame number : </td>
+  <td align = 'left' style='padding-bottom:5px'><input type='text' id='frame_number' value='20'></td>
+  <td align = 'right' style='padding-bottom:5px'> FPS : </td>
+  <td align = 'left' style='padding-bottom:5px'><input type = 'range' id='fps' min=0 max=60 value = '15'><output id='fpsvalue'>15</output></td>
+</tr>
+<tr>
+  <td colspan = '4' align = 'left' style='padding-bottom:10px'>
+    <input type='file' id='getfile' accept='image/*'>
+  </td>
+</tr>
+<tr>
+<td colspan = '2' align = 'left'><output id = 'sizetext'></output></td>
+<td align = 'right'>
+  <input type='button' id='animationbutton' value = 'animation start'>
+</td>
+<td align = 'right'>
+  <output id='currentframetext'>current frame : 0</output>
+</td>
+</tr>
+<tr>
+  <td align = 'center' style='padding-right:10px' colspan='2'>
+    <canvas width = 300; height = 300; style='border:1px black solid;' id = 'canvas_spritesheet'></canvas><br>
+    Spritesheet
+  </td>
+  <td align = 'center' style='padding-left:10px' colspan='2'>
+    <canvas width = 300; height = 300; style='border:1px black solid;' id = 'canvas_animation'></canvas><br>
+    Animation
+  </td>
+</tr>
 </table>
-<script src='number_system_converter.js'></script>
+</form>
+<script src='spritesheet_tester.js'></script>
 </div>
-</body>
-</html>
