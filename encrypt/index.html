@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><title>Hash Encryption</title>
+<meta charset='utf-8'>
+</head>
+<body>
+<div>
+<table align='center'>
+<tr><td align='center' colspan='3' style='padding-bottom:10px'>Hash Encryption</td></tr>
+<tr><td align='center'></td><td align='center'>Input</td><td align='center'>Output </td></tr>
+<tr><td align='center'>MD5</td><td align='center'><input type='text' id='input_md5'></td><td><input type='text' id='output_md5' style="text-align: right;" readonly></td></tr>
+<tr><td align='center'>SHA1</td><td align='center'><input type='text' id='input_sha1'></td><td><input type='text' id='output_sha1' style="text-align: right;" readonly></td></tr>
+<tr><td align='center'>SHA256</td><td align='center'><input type='text' id='input_sha256' value=''></td><td><input type='text' id='output_sha256' style="text-align: right;" readonly></td></tr>
+<tr><td align='center' colspan = '3'></td></tr><tr><td align='center' colspan = '3'><a href='https://github.com/brix/crypto-js'>CryptoJS are used on this page.</a></td></tr>
+</table>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js'></script>
+<script src='encrypt.js'></script>
+</div>
+</body>
+</html>
